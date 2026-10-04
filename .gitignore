@@ -1,0 +1,25 @@
+# Virtual environment
+venv/
+env/
+.env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+
+# Large PCAP archives and temporary extracted flows
+dataset/captures1_v2.zip
+dataset/temp_flows/
+dataset/extracted/
+dataset/extracted_flows.csv
+
+# Logs and OS files
+*.log
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

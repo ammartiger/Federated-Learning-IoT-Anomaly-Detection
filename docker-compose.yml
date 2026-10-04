@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  iot-paper-replication:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: iot_paper_replication
+    volumes:
+      - ./results:/workspace/results
+      - ./dataset:/workspace/dataset
+    environment:
+      - PYTHONUNBUFFERED=1
+    command: python experiment.py --rounds 8 --local_epochs 2 --max_samples_per_class 1500
